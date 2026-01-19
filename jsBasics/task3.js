@@ -1,5 +1,5 @@
 let age = 38;
-let adult = Boolean;
+let adult;
 if (age >= 18) {
     adult = true;
 } else {
