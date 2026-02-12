@@ -3,7 +3,7 @@ function fetchToDo() {
 	// fetch запит до сервера за конкретною адресою
 	// return обіцянка потім повернутися з результатом
 	return fetch('https://jsonplaceholder.typicode.com/todos/1').then((response) => {
-		// коли відповідь прийде тод 
+		// коли відповідь прийде тод
 		if (!response.ok) {
 			// якшо відповідь 200
 			throw new Error('An error occured'); // якшо сталася помилка

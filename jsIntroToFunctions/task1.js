@@ -1,9 +1,9 @@
 //Function Declaration (звернення і виклтк функції до її оголошення)
 
 function areaDefinition(width, height) {
-  // назва функції + параметри
-  const area = width * height; // тіло функції
-  return area; // повернення значення
+	// назва функції + параметри
+	const area = width * height; // тіло функції
+	return area; // повернення значення
 }
 const result1 = areaDefinition(5, 10); // виклик функції з аргументами
 console.log(result1); // виведення результату в консоль
@@ -11,9 +11,9 @@ console.log(result1); // виведення результату в консол
 //Function Expression (оголошення функції після її звернення)
 
 const areaDefinition2 = function (width, height) {
-  // назва функції + параметри
-  const areaCalc = width * height; // тіло функції
-  return areaCalc; // повернення значення
+	// назва функції + параметри
+	const areaCalc = width * height; // тіло функції
+	return areaCalc; // повернення значення
 };
 const result2 = areaDefinition2(5, 10); // виклик функції з аргументами
 console.log(result2); // виведення результату в консоль

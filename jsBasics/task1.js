@@ -1,10 +1,10 @@
-let description = "Description for string type";
-let salary= 1000;
+let description = 'Description for string type';
+let salary = 1000;
 let isActive = true;
-let bonus= null;
+let bonus = null;
 let englishLevel = undefined;
-console.log (description, typeof description);
-console.log (salary, typeof salary);
-console.log (isActive, typeof isActive);
-console.log (bonus, typeof bonus);
-console.log (englishLevel, typeof englishLevel);
+console.log(description, typeof description);
+console.log(salary, typeof salary);
+console.log(isActive, typeof isActive);
+console.log(bonus, typeof bonus);
+console.log(englishLevel, typeof englishLevel);
