@@ -7,5 +7,5 @@ student.firstName = "Juliia";
 student.lastName = "Arlamovska";   
 student.age = 38;                 
 student.courses = ["English", "QA Automation", "Work", "Family", "Others"];
-
-console.log(studentDetails); // Log the student object to the console
+ 
+console.log(student); // Log the student object to the console
