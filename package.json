@@ -1,23 +1,33 @@
 {
-  "name": "qa_automation_juliia",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/JuliiaArlamovska/qa_automation_juliia#readme",
-  "bugs": {
-    "url": "https://github.com/JuliiaArlamovska/qa_automation_juliia/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JuliiaArlamovska/qa_automation_juliia.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "chalk": "^5.6.2"
-  }
+	"name": "qa_automation_juliia",
+	"version": "1.0.0",
+	"description": "",
+	"homepage": "https://github.com/JuliiaArlamovska/qa_automation_juliia#readme",
+	"bugs": {
+		"url": "https://github.com/JuliiaArlamovska/qa_automation_juliia/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JuliiaArlamovska/qa_automation_juliia.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prettier": "npx prettier --write .",
+		"lint": "npx eslint --fix .",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"chalk": "^5.6.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.0.0",
+		"globals": "^17.3.0",
+		"husky": "^9.1.7",
+		"prettier": "3.8.1"
+	}
 }

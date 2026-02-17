@@ -1,4 +1,4 @@
-const person = {firstName: "", lastName: "", age: ""};
-person.email = "";
+const person = { firstName: '', lastName: '', age: '' };
+person.email = '';
 delete person.age;
-console.log(person) 
+console.log(person);

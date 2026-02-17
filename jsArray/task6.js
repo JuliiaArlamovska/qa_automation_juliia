@@ -1,7 +1,7 @@
 // Сортування масивів
 
-const numbersList = [1, 10, 14, 2, 4, 5, 43, 34, 0, -99];         // масив чисел
-const newNumberList = numbersList.sort((a, b) => a - b);  // Використання методу sort для сортування масиву за зростанням
+const numbersList = [1, 10, 14, 2, 4, 5, 43, 34, 0, -99]; // масив чисел
+const newNumberList = numbersList.sort((a, b) => a - b); // Використання методу sort для сортування масиву за зростанням
 // a це перше порівнюване значення
 // b це друге порівнюване значення
-console.log (newNumberList) // Виведе: [1, 2, 4, 5, 10, 14, 34, 43]
+console.log(newNumberList); // Виведе: [1, 2, 4, 5, 10, 14, 34, 43]
