@@ -82,3 +82,4 @@ test("Get photos for album 1", async () => {
     expect(response.data[0]).toHaveProperty('thumbnailUrl')  
 })
 
+
