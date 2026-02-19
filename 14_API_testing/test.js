@@ -14,9 +14,38 @@ test("Get users post details", async () => {
     expect(response.status).toBe(200)
     expect(response.data).toHaveProperty('userId')
     expect(response.data).toHaveProperty('id')
-    expect(response.data).toHaveProperty('title')
-    expect(response.data).toHaveProperty('body')  
+    expect(response.data).toHaveProperty('title')    
 })
+test("Get comments for post 1", async () => {
+    var response = await axios.get(`${jsonData.baseUrl}/posts/1/comments`,
+        {
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+    console.log(response.data)
+    expect(response.status).toBe(200)
+    expect(response.data[0]).toHaveProperty('postId')
+    expect(response.data[0]).toHaveProperty('id')
+    expect(response.data[0]).toHaveProperty('name')    
+    expect(response.data[0]).toHaveProperty('email')  
+})
+
+test("Get user's todos", async () => {
+    var response = await axios.get(`${jsonData.baseUrl}/users/1/todos`,
+        {
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+    console.log(response.data)
+    expect(response.status).toBe(200)
+    expect(response.data[0]).toHaveProperty('userId')
+    expect(response.data[0]).toHaveProperty('id')
+    expect(response.data[0]).toHaveProperty('title')   
+    expect(response.data[0]).toHaveProperty('completed')  
+})
+
 
 test("Create a new post", async () => {
     var response = await axios.post(`${jsonData.baseUrl}/posts`,
@@ -38,3 +67,18 @@ test("Create a new post", async () => {
     expect(response.data.title).toBe('AQA post')
     expect(response.data).toHaveProperty('body')  
 })
+
+test("Get photos for album 1", async () => {
+    var response = await axios.get(`${jsonData.baseUrl}/albums/1/photos`,
+        {
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+    console.log(response.data)
+    expect(response.status).toBe(200)
+    expect(response.data[0]).toHaveProperty('id')
+    expect(response.data[0]).toHaveProperty('title')
+    expect(response.data[0]).toHaveProperty('thumbnailUrl')  
+})
+
