@@ -4,4 +4,7 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
   testMatch: ['**/?(*.)+(spec|test|tests).[jt]s?(x)'],
+  //extensionsToTreatAsEsm: ['.js'],
+  transform: {},
+  testEnvironment: 'node',
 };
